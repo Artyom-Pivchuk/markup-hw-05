@@ -94,7 +94,7 @@ body {
 }
 
 .logo-header-link:focus {
-color: #000000;
+    color: #000000;
 }
 
 .logo-prefix {
@@ -109,6 +109,7 @@ color: #000000;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .header-contacts {
@@ -121,14 +122,14 @@ color: #000000;
 }
 
 .header-contacts-icon {
-    fill: #757575;
+    fill: var(--description-color);
     margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-item:not(:last-child) {
     margin-right: 50px;
 }
-
 
 .menu-link:hover, :focus {
     color: var(--accent-color);
@@ -140,6 +141,7 @@ color: #000000;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--description-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover, :focus {
@@ -159,14 +161,13 @@ color: #000000;
 .menu-link-active::after {
     position: absolute;
     content: '';
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     border-radius: 2px;
     width: 100%;
     height: 4px;
     bottom: 0;
     left: 0;
 }
-
 /*==============/HEADER==============*/
 
 /*===============HERO================*/
@@ -249,7 +250,6 @@ color: #000000;
     justify-content: center;
     align-items: center;
 }
-
 /*===========/PRIORITIES===========*/
 
 /*===========EMPLOYMENT===========*/
@@ -281,14 +281,14 @@ color: #000000;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--title-color);
     background-color: rgba(47, 48, 58, 0.8);
 }
 /*==========/EMPLOYMENT===========*/
 
 /*===============TEAM==============*/
 .section-team {
-    background: #F5F4FA;
+    background-color: #F5F4FA;
 }
 
 .team-list {
@@ -346,6 +346,7 @@ color: #000000;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-list-item:not(:first-child) {
@@ -359,6 +360,7 @@ color: #000000;
 
 .team-social-list-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-list-link:hover .team-social-list-icon,
@@ -373,7 +375,8 @@ color: #000000;
     padding-top: 16px;
     padding-left: 32px;
     border: 1px solid #AFB1B8;
-    border-radius: 4px;    
+    border-radius: 4px;  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-list {
@@ -393,6 +396,7 @@ color: #000000;
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-list-link:hover .regular-clients-list-icon,
@@ -403,14 +407,11 @@ color: #000000;
 .regular-clients-list-link:hover .regular-clients-list-container {
     border-color: var(--accent-color);
 }
-
-
 /*========/REGULAR CLIENTS=======*/
 
 /*============FOOTER=============*/
 .footer {
     background: var(--background-color);
-    /*padding-top: 60px;*/
     padding-bottom: 60px;
 }
 
@@ -430,7 +431,7 @@ color: #000000;
 .footer-right-description {
     font-weight: 700;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--title-color);
 }
 
 .footer-right-list-icon {
@@ -452,6 +453,7 @@ color: #000000;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-right-list-item:not(:first-child) {
@@ -534,12 +536,13 @@ color: #000000;
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-}
+ }
 
 .portfolio-list-item-container {
     padding: 20px 24px;
@@ -550,38 +553,34 @@ color: #000000;
 .filter-btn {
     min-width: 73px;
     padding: 6px 22px;
-    font-family: var(--primary-font-family);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     border: none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:focus {
-    font-family: var(--primary-font-family);
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .filter-btn:hover {
     color: var(--title-color);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .portfolio-title {
@@ -598,6 +597,33 @@ color: #000000;
     line-height: 1.88;  
     letter-spacing: 0.03em;
     color: var(--description-color);
+}
+
+.portfolio-list-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-list-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: rgba(255, 255, 255, 1);
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-link:hover .portfolio-list-overlay,
+.portfolio-list-link:focus .portfolio-list-overlay {
+    transform: translateY(0%);
 }
 /*==========/PORTFOLIO-PAGE==========*/
 
@@ -642,33 +668,5 @@ color: #000000;
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
-
 }
 /*=============/BACKDROP=============*/
-
-.portfolio-list-img-wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-.portfolio-list-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 63px 24px;
-    background-color: rgba(33, 150, 243, 0.9);
-    font-weight: 400;
-    font-size: 18px; 
-    line-height: 1.56;
-    color: rgba(255, 255, 255, 1);
-    overflow: auto;
-    transform: translateY(100%);
-    transition: transform 250ms linear;
-}
-
-.portfolio-list-link:hover .portfolio-list-overlay,
-.portfolio-list-link:focus .portfolio-list-overlay {
-    transform: translateY(0%);
-}
